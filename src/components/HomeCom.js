@@ -1,8 +1,11 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function HomeCom() {
   return (
-    <div>HomeCom</div>
+    <>
+    <div>This is Home Component</div>
+    </>
   )
 }
 

@@ -12,6 +12,7 @@ import Navibar from './components/Navbar';
 import CarCard from './components/CarCard';
 import ListCar from './components/ListCar';
 import NavbarCom from './components/NavbarCom';
+import CardCom from './components/CardCom';
 function App() {
   return (
     <div>
@@ -21,6 +22,7 @@ function App() {
         </Switch>
       </Router> */}
     <NavbarCom/>
+    <CardCom/>
     </div>
     // <Router>
     //   <Switch>
