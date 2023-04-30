@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import './Login.css';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import OwnerViewStatus from './owner/OwnerViewStatus';
 
 function LoginCom() {
@@ -19,7 +18,9 @@ function LoginCom() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-   
+    if(username=='owner' && password=='owner123'){
+
+    }
   }
 
   return (
@@ -51,16 +52,7 @@ function LoginCom() {
         
         <button type="submit" onClick={handleSubmit}>Login</button>
       </form>
-      <Router>
-      <Routes>
-        <Route exact path="/login">
-          {isLoggedIn ? <Link to="/owner" /> : <LoginCom setIsLoggedIn={setIsLoggedIn} />}
-        </Route>
-        <Route path="/">
-          {isLoggedIn ? <OwnerViewStatus /> : <Link to="/login" />}
-        </Route>
-      </Routes>
-    </Router>
+      
     </div>
   );
 }

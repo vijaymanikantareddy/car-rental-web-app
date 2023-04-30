@@ -9,18 +9,19 @@ import './App.css';
 // import PaymentPage from './components/PaymentPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import LoginComPro from './components/LoginComPro';
-import SignupCom from './components/SignupCom';
-import { Routes,Route } from 'react-router-dom';
-import NavbarOwnerCom from './components/owner/NavbarComOwner';
-import OwnerViewStatus from './components/owner/OwnerViewStatus';
-import OwnerPayment from './components/owner/OwnerPayment';
+// import SignupCom from './components/SignupCom';
+// import { Routes,Route } from 'react-router-dom';
+// import NavbarOwnerCom from './components/owner/NavbarComOwner';
+// import OwnerViewStatus from './components/owner/OwnerViewStatus';
+// import OwnerPayment from './components/owner/OwnerPayment';
+import LoginCom from './components/LoginCom';
 
 function App() {
   return (
     <div>
-      <NavbarOwnerCom/>
+      {/* <NavbarOwnerCom/> */}
       {/* <OwnerViewStatus/> */}
-      {/* <LoginComPro/> */}
+      <LoginCom/>
       {/* <Routes>
         <Route path="/" element={<LoginComPro/>}/>
         <Route path="/signup" element={<LoginComPro/>}/>
