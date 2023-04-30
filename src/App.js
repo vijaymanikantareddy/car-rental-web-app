@@ -8,32 +8,20 @@ import './App.css';
 // import ViewHistoryPage from './components/ViewHistoryPage';
 // import PaymentPage from './components/PaymentPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navibar from './components/Navbar';
-import CarCard from './components/CarCard';
-import ListCar from './components/ListCar';
-import NavbarCom from './components/NavbarCom';
-import CardCom from './components/CardCom';
+import LoginCom from './components/LoginCom';
+import SignupCom from './components/SignupCom';
+// import Navibar from './components/Navbar';
+// import CarCard from './components/CarCard';
+// import ListCar from './components/ListCar';
+// import NavbarCom from './components/NavbarCom';
+// import CardCom from './components/CardCom';
 function App() {
   return (
     <div>
-      {/* <Router>
-        <Switch>
-
-        </Switch>
-      </Router> */}
-    <NavbarCom/>
-    <CardCom/>
+      <LoginCom/>
+      {/* <SignupCom/> */}
     </div>
-    // <Router>
-    //   <Switch>
-    //     <Route path="/" exact component={LoginPage} />
-    //     <Route path="/signup" component={SignupPage} />
-    //     <Route path="/list-car" component={ListCarPage} />
-    //     <Route path="/view-status" component={ViewStatusPage} />
-    //     <Route path="/view-history" component={ViewHistoryPage} />
-    //     <Route path="/payment" component={PaymentPage} />
-    //   </Switch>
-    // </Router>
+    
   );
 }
 
