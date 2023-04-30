@@ -3,12 +3,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import HomeCom from './HomeCom';
-import StatusCom from './StatusCom';
-import HistoryCom from './HistoryCom';
-import PayCom from './PayCom';
-import CardCom from './CardCom';
+import HomeCom from '../HomeCom';
+import StatusCom from '../StatusCom';
+import HistoryCom from '../HistoryCom';
+import PayCom from '../PayCom';
+import CardCom from '../CardCom';
 import { Dropdown } from 'react-bootstrap';
+import OwnerViewStatus from './OwnerViewStatus';
+import OwnerPayment from './OwnerPayment';
+import OwnerHistory from './OwnerHistory';
+import LoginCom from '../LoginCom';
 
 
 function NavbarOwnerCom() {
@@ -24,12 +28,10 @@ function NavbarOwnerCom() {
   return (<Router>
     <>    <Navbar bg="dark" variant='dark' expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to={"/"}>Car Rental Application</Navbar.Brand>
+        <Navbar.Brand as={Link} to={"/owner"}>Car Rental Application</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {/* <Nav.Link as={Link} to={"/"}>Home</Nav.Link> */}
-            <Nav.Link as={Link} to={"owner/status"}>View Status</Nav.Link>
             <Nav.Link as={Link} to={"owner/history"}>View History</Nav.Link>
             <Nav.Link as={Link} to={"owner/payment"}>Payment Page</Nav.Link>
           </Nav>
@@ -52,12 +54,10 @@ function NavbarOwnerCom() {
     </Navbar></>
     <Routes>
 
-        <Route path='/' element={<HomeCom/>}/>
-        <Route path='/card' element={<CardCom/>}/>
-        <Route path='/owner/status' element={<StatusCom/>}/>
-        <Route path='/owner/history'element={<HistoryCom/>}/>
-        <Route path='/owner/payment'element={<PayCom/>}/>
-        <Route path='/owner/logout' element={<HomeCom/>}/>
+        <Route path='/owner' element={<OwnerViewStatus/>}/>
+        <Route path='/owner/history'element={<OwnerHistory/>}/>
+        <Route path='/owner/payment'element={<OwnerPayment/>}/>
+        <Route path='/owner/logout' element={<LoginCom/>}/>
     </Routes>
     </Router>
   );

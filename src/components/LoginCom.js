@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 
 import './Login.css';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import OwnerViewStatus from './owner/OwnerViewStatus';
 
 function LoginCom() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -49,6 +51,16 @@ function LoginCom() {
         
         <button type="submit" onClick={handleSubmit}>Login</button>
       </form>
+      <Router>
+      <Routes>
+        <Route exact path="/login">
+          {isLoggedIn ? <Link to="/owner" /> : <LoginCom setIsLoggedIn={setIsLoggedIn} />}
+        </Route>
+        <Route path="/">
+          {isLoggedIn ? <OwnerViewStatus /> : <Link to="/login" />}
+        </Route>
+      </Routes>
+    </Router>
     </div>
   );
 }

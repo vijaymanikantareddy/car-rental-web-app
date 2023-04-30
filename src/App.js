@@ -8,18 +8,40 @@ import './App.css';
 // import ViewHistoryPage from './components/ViewHistoryPage';
 // import PaymentPage from './components/PaymentPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LoginCom from './components/LoginCom';
+// import LoginComPro from './components/LoginComPro';
 import SignupCom from './components/SignupCom';
-// import Navibar from './components/Navbar';
-// import CarCard from './components/CarCard';
-// import ListCar from './components/ListCar';
-// import NavbarCom from './components/NavbarCom';
-// import CardCom from './components/CardCom';
+import { Routes,Route } from 'react-router-dom';
+import NavbarOwnerCom from './components/owner/NavbarComOwner';
+import OwnerViewStatus from './components/owner/OwnerViewStatus';
+import OwnerPayment from './components/owner/OwnerPayment';
+
 function App() {
   return (
     <div>
-      <LoginCom/>
-      {/* <SignupCom/> */}
+      <NavbarOwnerCom/>
+      {/* <OwnerViewStatus/> */}
+      {/* <LoginComPro/> */}
+      {/* <Routes>
+        <Route path="/" element={<LoginComPro/>}/>
+        <Route path="/signup" element={<LoginComPro/>}/>
+        <Route path="/user/" element={<LoginComPro/>}/>
+        <Route path="/user/payment" element={<LoginComPro/>}/>
+        <Route path="/user/feedback" element={<LoginComPro/>}/>
+        <Route path="/user/modification" element={<LoginComPro/>}/>
+        <Route path="/user/viewStatus" element={<LoginComPro/>}/>
+        <Route path="/owner/" element={<LoginComPro/>}/>
+        <Route path="/owner/viewStatus" element={<LoginComPro/>}/>
+        <Route path="/owner/viewHistory" element={<LoginComPro/>}/>
+        <Route path="/owner/payment" element={<LoginComPro/>}/>
+        <Route path="/admin/" element={<LoginComPro/>}/>
+        <Route path="/admin/viewUsers" element={<LoginComPro/>}/>
+        <Route path="/admin/viewOwners" element={<LoginComPro/>}/>
+        <Route path="/admin/viewStatus" element={<LoginComPro/>}/>
+        <Route path="/admin/manageUsers" element={<LoginComPro/>}/>
+        <Route path="/admin/manageOwners" element={<LoginComPro/>}/>
+        <Route path="/admin/manageAds" element={<LoginComPro/>}/>
+
+      </Routes> */}
     </div>
     
   );
