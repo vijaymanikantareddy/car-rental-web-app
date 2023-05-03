@@ -15,7 +15,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import OwnerViewStatus from './components/owner/OwnerViewStatus';
 // import OwnerPayment from './components/owner/OwnerPayment';
 import LoginCom from './components/LoginCom';
-
+import SignupPage from './components/SignupPage';
+import SignupCom from './components/SignupCom';
 function App() {
   return (
     <div>
@@ -24,23 +25,23 @@ function App() {
       <LoginCom/>
       {/* <Routes>
         <Route path="/" element={<LoginComPro/>}/>
-        <Route path="/signup" element={<LoginComPro/>}/>
-        <Route path="/user/" element={<LoginComPro/>}/>
-        <Route path="/user/payment" element={<LoginComPro/>}/>
-        <Route path="/user/feedback" element={<LoginComPro/>}/>
-        <Route path="/user/modification" element={<LoginComPro/>}/>
-        <Route path="/user/viewStatus" element={<LoginComPro/>}/>
-        <Route path="/owner/" element={<LoginComPro/>}/>
-        <Route path="/owner/viewStatus" element={<LoginComPro/>}/>
-        <Route path="/owner/viewHistory" element={<LoginComPro/>}/>
-        <Route path="/owner/payment" element={<LoginComPro/>}/>
-        <Route path="/admin/" element={<LoginComPro/>}/>
-        <Route path="/admin/viewUsers" element={<LoginComPro/>}/>
-        <Route path="/admin/viewOwners" element={<LoginComPro/>}/>
-        <Route path="/admin/viewStatus" element={<LoginComPro/>}/>
-        <Route path="/admin/manageUsers" element={<LoginComPro/>}/>
-        <Route path="/admin/manageOwners" element={<LoginComPro/>}/>
-        <Route path="/admin/manageAds" element={<LoginComPro/>}/>
+        <Route path="/signup" element={<SignupPage/>}/>
+        <Route path="/user" element={<UserDashboard/>}/>
+        <Route path="/userpayment" element={<UserPayment/>}/>
+        <Route path="/logout" element={<LoginCom/>}/>
+        <Route path="/usermodification" element={<LoginComPro/>}/>
+        <Route path="/userviewStatus" element={<LoginComPro/>}/>
+        <Route path="/owner" element={<LoginComPro/>}/>
+        <Route path="/ownerviewStatus" element={<LoginComPro/>}/>
+        <Route path="/ownerviewHistory" element={<LoginComPro/>}/>
+        <Route path="/ownerpayment" element={<LoginComPro/>}/>
+        <Route path="/admin" element={<LoginComPro/>}/>
+        <Route path="/adminviewUsers" element={<LoginComPro/>}/>
+        <Route path="/adminviewOwners" element={<LoginComPro/>}/>
+        <Route path="/adminviewStatus" element={<LoginComPro/>}/>
+        <Route path="/adminmanageUsers" element={<LoginComPro/>}/>
+        <Route path="/adminmanageOwners" element={<LoginComPro/>}/>
+        <Route path="/adminmanageAds" element={<LoginComPro/>}/>
 
       </Routes> */}
     </div>
